@@ -896,7 +896,7 @@ body {
 // ---- State ----
 let API_URL = 'https://script.google.com/macros/s/AKfycbwhivk7V58ARuwX5SoBeDaNkd1Pr5jSfdLjtUQEOKXaQlPCkYi5iolLlYhVuPRPxlIYHA/exec';
 const API_TOKEN = 'ak-junior-2026-newtown';
-const APP_VERSION = '1.0';
+const APP_VERSION = '1.1';
 let scheduleData = null;
 const COACH_ROLES = ['coach', 'administrator'];
 const ADMIN_USERS = ['Mr Kyle', 'Ms Alex'];
@@ -1549,7 +1549,7 @@ async function checkForAppUpdate() {
     }
   } catch(e) {}
 }
- 
+
 function applyUpdate() {
   // Clear service worker cache and hard reload
   if ('caches' in window) {
