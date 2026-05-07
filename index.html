@@ -822,6 +822,13 @@ body {
   </div>
 </div>
 
+<!-- Loading & Error (outside #app so they're visible before login) -->
+<div id="loadingView" class="loading">
+  <div class="spinner"></div>
+  <p>Loading schedule...</p>
+</div>
+<div id="errorView" class="error-banner" style="display:none;"></div>
+
 <!-- Main app -->
 <div id="app" style="display:none;">
   <div class="ptr-indicator" id="ptrIndicator">
@@ -846,13 +853,6 @@ body {
     <button class="tab" data-tab="chat" onclick="switchTab('chat')">Team Chat<span class="badge" id="chatBadge"></span></button>
     <button class="tab" data-tab="admin" onclick="switchTab('admin')" id="adminTab" style="display:none;">Admin</button>
   </div>
-
-  <div id="loadingView" class="loading">
-    <div class="spinner"></div>
-    <p>Loading schedule...</p>
-  </div>
-
-  <div id="errorView" class="error-banner" style="display:none;"></div>
 
   <!-- Schedule tab -->
   <div id="scheduleSection" class="section active">
