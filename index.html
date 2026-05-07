@@ -894,7 +894,7 @@ body {
 
 <script>
 // ---- State ----
-let API_URL = 'https://script.google.com/macros/s/AKfycbwhivk7V58ARuwX5SoBeDaNkd1Pr5jSfdLjtUQEOKXaQlPCkYi5iolLlYhVuPRPxlIYHA/exec';
+let API_URL = 'https://script.google.com/macros/s/AKfycbyApkNMxDxK2j1aTwzZ4kVIHNY7SP2ehs_rV6XRj5u9jkKXC-cpGOeoguoDp7M8u4esng/exec';
 const API_TOKEN = 'ak-junior-2026-newtown';
 const APP_VERSION = '1.1';
 let scheduleData = null;
@@ -1098,6 +1098,7 @@ function renderSessions() {
           <div style="text-align:right">
             <div class="session-time">${s.time}</div>
             <div style="font-size:12px; color:var(--text-dim); margin-top:4px;">${s.duration}</div>
+            ${s.location ? `<div style="font-size:11px; color:var(--text-dim); margin-top:3px;">📍 ${s.location}</div>` : ''}
           </div>
         </div>
         ${!isPast && !userIsCoach ? `
